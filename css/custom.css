@@ -1,0 +1,96 @@
+@import url(http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic);
+
+  body {
+    font-family: 'Karla', sans-serif;
+  }
+
+  button {
+    color: white;
+    width: 130px;
+    height: 60px;
+    margin: 15px;
+    border: none;
+  }
+
+  :focus {
+    outline: white;
+  }
+
+  .white button{
+    color: darkgray;
+  }
+
+  /* Set the fixed height of the footer here */
+  #push,
+  #footer {
+    height: 100px;
+  }
+  #footer {
+    background-color: bisque;
+    margin-top: 20px;
+  }
+
+  /* Custom page CSS
+  -------------------------------------------------- */
+  /* Not required for template or sticky footer method. */
+
+  .container .credit {
+    margin: 40px 0;
+  a {
+    color: darkgray;
+  }
+}
+
+  .col-md-1 {
+      width: 155px;
+      height: 80px;
+      border-bottom-right-radius: 39px;
+      -webkit-border-bottom-right-radius: 39px;
+      -moz-border-bottom-right-radius: 39px;
+      border-bottom-right-radius: 39px;
+  }
+
+  @media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 568px)
+  and (orientation : portrait) {
+    .col-md-1 {
+      width: 128px;
+      height: 80px;
+      -webkit-border-bottom-right-radius: 39px;
+      -moz-border-bottom-right-radius: 39px;
+      border-bottom-right-radius: 39px;
+    }
+    button {
+      font-size: 12px;
+    }
+  }
+
+  @media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 568px)
+  and (orientation : landscape) {
+    .col-md-1 {
+      width: 156px;
+      height: 80px;
+      -webkit-border-bottom-right-radius: 39px;
+      -moz-border-bottom-right-radius: 39px;
+      border-bottom-right-radius: 39px;
+    }
+    button {
+      font-size: 12px;
+    }
+  }
+}
+
+button:focus {outline:none;}
+
+button:hover {box-shadow: 5px 5px 0px #ccc; outline:none;}
+
+.clarita {
+  color: white;
+}
+
+.obscura {
+  color: black;
+}
