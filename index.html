@@ -3,24 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
-  <title>CSS Color Chart</title>
+  <title>Sugar Skull Generator</title>
   <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/angular.min.js"></script>
-  <script src="js/ui-bootstrap-0.11.2.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/zeroclipboard/2.1.6/ZeroClipboard.min.js"></script>
-  <script src="http://rawgit.com/asafdav/ng-clip/master/src/ngClip.js"></script>
   <script src="js/app.js"></script>
+  <style>
+    header {
 
+      margin: 0 auto;
+      text-align: center;
+    }
+    .skull {
+      width: 400px;
+      margin: 0 auto;
+    }
+    .skull img {
+      position: absolute;
+    }
+    .eyes {
+      width: 400px;
+      margin: 0 auto;
+    }
+    .eyes img {
+      position: absolute;
+      top: 330px;
+      left: 550px;
+    }
+    .nose {
+      width: 400px;
+      margin: 0 auto;
+    }
+    .nose img {
+      position: absolute;
+      top: 400px;
+      left: 0px;
+    }
+  </style>
 </head>
 <body ng-controller="mainCtrl">
   <div class="container">
-
-
-  <div id="footer">
-    <div class="container">
-      <p class="muted credit">hola mundo.
-      <br>Made in 2014 by <strong><a href="https://twitter.com/iaranzadi">Imanol Aranzadi</a></strong>.</p>
+    <header>
+      <h1>Feliz Día de los Muertos</h1>
+    </header><br><br><br>
+    <div class="stage">
+      <div class="skull"><img src="images/skull2/skull.png" alt="Sugar Skull Skull"></div>
+      <div class="eyes"><img src="images/skull2/eyes1.png" alt="Sugar Skull Eyes"></div>
+      <div class="nose"><img src="images/skull2/nose1.png" alt="Sugar Skull Nose"></div>
     </div>
   </div>
 </body>
