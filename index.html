@@ -2,55 +2,74 @@
 <html ng-app="skullApp">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Sugar Skull Generator</title>
+  <title>Skull Rules</title>
   <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/angular.min.js"></script>
   <script src="js/app.js"></script>
-  <style>
-    header {
 
-      margin: 0 auto;
-      text-align: center;
-    }
-    .skull {
-      width: 400px;
-      margin: 0 auto;
-    }
-    .skull img {
-      position: absolute;
-    }
-    .eyes {
-      width: 400px;
-      margin: 0 auto;
-    }
-    .eyes img {
-      position: absolute;
-      top: 330px;
-      left: 550px;
-    }
-    .nose {
-      width: 400px;
-      margin: 0 auto;
-    }
-    .nose img {
-      position: absolute;
-      top: 400px;
-      left: 0px;
-    }
-  </style>
 </head>
 <body ng-controller="mainCtrl">
-  <div class="container">
-    <header>
-      <h1>Feliz Día de los Muertos</h1>
-    </header><br><br><br>
-    <div class="stage">
-      <div class="skull"><img src="images/skull2/skull.png" alt="Sugar Skull Skull"></div>
-      <div class="eyes"><img src="images/skull2/eyes1.png" alt="Sugar Skull Eyes"></div>
-      <div class="nose"><img src="images/skull2/nose1.png" alt="Sugar Skull Nose"></div>
+    <div class="container">
+      <div class="masthead">
+        <h1>Feliz Día de los Muertos</h1>
+      </div>
     </div>
-  </div>
+
+    <div class="container">
+
+      <div class="blog-header">
+        <h2 class="blog-title">Create your own Sugar Skull</h2>
+        <p class="lead blog-description">Then you can print for the kids for coloring.</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-7 stage">
+            <div class="skull"><img ng-show="radioSkull" ng-src="images/skull{{radioSkull}}/skull.png" alt="Sugar Skull Skull"></div>
+            <div class="eyes"><img ng-show="radioEyes" ng-src="images/skull{{radioSkull}}/eyes{{radioEyes}}.png" alt="Sugar Skull Eyes"></div>
+            <div class="nose"><img ng-show="radioNose" ng-src="images/skull{{radioSkull}}/nose{{radioNose}}.png" alt="Sugar Skull Nose"></div>
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-4 ">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>Sugar Skull Generator</h4>
+            <p>Here you can create your own Sugar Skull</em> </p>
+          </div>
+          <div class="sidebar-module">
+            <h3>Choose a Skull</h3>
+            <div class="chooseSkull">
+                <label class="radio-inline"><input ng-model="radioSkull" value="1" type="radio" name="skullRatio"><img src="images/icons/skull-icon-1.png" alt=""></label>
+                <label class="radio-inline"><input ng-model="radioSkull" value="2" type="radio" name="skullRatio"><img src="images/icons/skull-icon-2.png" alt=""></label>
+                <label class="radio-inline"><input ng-model="radioSkull" value="3" type="radio" name="skullRatio"><img src="images/icons/skull-icon-3.png" alt=""></label>
+            </div><br><br><br>
+            <h3>Choose some eyes</h3>
+            <div class="chooseEyes">
+                <label class="radio-inline"><input ng-model="radioEyes" value="1" type="radio" name="eyesRatio"><img src="images/icons/eyes-icon-1.png" alt=""></label>
+                <label class="radio-inline"><input ng-model="radioEyes" value="2" type="radio" name="eyesRatio"><img src="images/icons/eyes-icon-2.png" alt=""></label>
+                <label class="radio-inline"><input ng-model="radioEyes" value="3" type="radio" name="eyesRatio"><img src="images/icons/eyes-icon-3.png" alt=""></label>
+            </div><br><br><br>
+            <h3>Choose a Nose</h3>
+            <div class="chooseNose">
+                <label class="radio-inline"><input ng-model="radioNose" value="1" type="radio" name="noseRatio"><img src="images/icons/nose-icon-1.png" alt=""></label>
+                <label class="radio-inline"><input ng-model="radioNose" value="2" type="radio" name="noseRatio"><img src="images/icons/nose-icon-2.png" alt=""></label>
+                <label class="radio-inline"><input ng-model="radioNose" value="3" type="radio" name="noseRatio"><img src="images/icons/nose-icon-3.png" alt=""></label>
+            </div><br><br><br>
+            <!-- <div class="chooseDecoration">
+                <label class="radio-inline"><input type="radio" name="optradio"><img src="images/icons/deco-icon-1.png" alt=""></label>
+                <label class="radio-inline"><input type="radio" name="optradio"><img src="images/icons/deco-icon-1.png" alt=""></label>
+                <label class="radio-inline"><input type="radio" name="optradio"><img src="images/icons/deco-icon-1.png" alt=""></label>
+            </div> -->
+
+          </div>
+
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+
+
 </body>
 </html>

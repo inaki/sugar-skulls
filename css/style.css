@@ -1,0 +1,39 @@
+.masthead {
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+}
+.skull{
+  min-width: 500px;
+  position: relative;
+  margin: 35px 86px;
+  z-index: -99;
+}
+.eyes{
+  min-width: 500px;
+  position: relative;
+  margin: -270px 0px 0px 0px;
+  z-index: 0;
+}
+.eyes img {
+  margin-top: -70px;
+  margin-left: 188px;
+}
+.nose{
+  min-width: 500px;
+  position: relative;
+  margin: 0px 0px 0px 107px;
+  z-index: 10;
+}
+.nose img {
+  margin-top: -30px;
+  margin-left: 177px;
+}
+
+.col-sm-4 {
+  min-width: 350px;
+}
+
+.container {
+  min-width: 995px;
+}
